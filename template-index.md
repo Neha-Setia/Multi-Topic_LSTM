@@ -66,6 +66,9 @@ The aforementioned TAV-LSTM model learns topic information through an average we
 ### Multi—Ingredient Aware LSTM (MTA-LSTM)
 Although TAT-LSTM could make better use of the topic information yet not good enough because it cannot guarantee that the semantic of all the topic words are represented in the generated essay. Furthermore, conventional attention model, like TAT-LSTM, tends to ignore the past attentional historical information, which may lead to a situation where some topic words appear repeatedly while the others do not appear in the generated text. To address both problems, introduce a multi-topic-aware LSTM (MTA-LSTM) by adding a topic aware component on the aforementioned TAT-LSTM model. The basic idea is to maintain a topic coverage vector, each dimension of which represents the degree to which a topic word needs to be expressed in future generation, to adjust the attention policy, so that the model can consider more about unexpressed topic words. Topic distributed information could improve the thematic integrity and readability of the generated essay.
 
+
+![](doc/source/images/multi-aware.png) 
+
 # Summary
 In this tutorial,  we have discussed a multi-ingredient-aware approach for recipe generation to ensure the recipe involves the semantics of all topic words. Compared with conventional nature language generator like attention-based sequence to sequence model, this approach takes into account the multi-topic distribution. This model has the ability to generate multi-topic related and expression-coherent recipes by incorporating attention and coverage mechanism.
 
