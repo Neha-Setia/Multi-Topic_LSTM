@@ -53,6 +53,7 @@ Sample ingredients 2 = {Green tea, chocolate powder, baking soda, milk}
 * From the Collected paragraph-level essays randomly select them in proportion of 6:1 as training set and as test set . Name this dataset as `recipes`.
 
 ￼
+![](doc/source/images/recipe.png) 
 
 ## Methodology for constructing a multi-ingredient aware LSTM. 
 
